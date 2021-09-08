@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <p class="title">Product Review Survey</p>
+        <ul>
+          <li class="form-field">
+            <label for="name">Full Name: </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="e.g. John Doe"
+              required
+            />
+          </li>
+          <li class="form-field">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </li>
+          <li class="form-field">
+            <label for="age">Age: </label>
+            <input type="number" id="age" min="18" max="99" />
+          </li>
+          <li class="form-field">
+            <label for="select-gender"
+              >To which gender identity do you most identify?
+            </label>
+            <select name="Gender" id="select-gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="trans-f">Transgender Female</option>
+              <option value="trans-m">Transgender Male</option>
+              <option value="variant">Gender variant/Non Conforming</option>
+              <option value="not-listed">Not listed</option>
+              <option value="no-answer">I prefer not to answer</option>
+            </select>
+          </li>
+          </li>
+          <li class="form-field">
+            <p>Would you recommend this product to your friends or family?</p>
+            <br/>
+            <div>
+              <input
+              type="radio"
+              id="recommendChoice1"
+              name="recommend"
+              value="Yes"
+            />
+            <label for="recommendChoice1">Yes</label>
+            </div>
+            <div>
+              <input
+              type="radio"
+              id="recommendChoice2"
+              name="recommend"
+              value="No"
+            />
+            <label for="recommendChoice2">No</label>
+            </div>
+          </li>
+          <li class="form-field">
+            <label for="suggestions">
+              We'd like to read your suggestions about this product so we can
+              improve:
+            </label>
+            <textarea
+              id="suggestions"
+              name="suggestions"
+              rows="10"
+              cols="50"
+              placeholder="Start typing here"
+            ></textarea>
+          </li>
+          <li class="form-field">
+            <div>
+              <input type="checkbox" id="future-surveys" name="future-surveys" />
+              <label for="future-surveys"
+                >I'd like to participate in future surveys in regards to other
+                products.</label>
+            </div>
+          </li>
+          <li class="form-field">
+            <input type="submit" class="submit-button" value="Submit"></input>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

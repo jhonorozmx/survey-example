@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("./assets/background.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 450px;
+  background-color: hsla(0, 2%, 84%, 0.8);
+  border-radius: 10px;
+}
+
+form {
+  padding: 1rem;
+  font-family: Arial;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form > ul {
+  list-style: none;
+}
+
+.form-field {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  font-family: Arial;
+  padding-left: 0.5rem;
+}
+
+#age {
+  width: 25%;
+}
+
+#select-gender {
+  width: 50%;
+}
+
+.submit-button {
+  width: 60%;
+  align-self: center;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
