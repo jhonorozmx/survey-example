@@ -34,10 +34,6 @@ form {
   margin-bottom: 1rem;
 }
 
-form > ul {
-  list-style: none;
-}
-
 .form-field {
   margin-bottom: 0.75rem;
   display: flex;
